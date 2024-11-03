@@ -55,15 +55,13 @@
 
 ![](https://pic.imgdb.cn/item/6726d46dd29ded1a8c235b62.png)
 
-![image-20241103172341764](C:\Users\guinan.lin\AppData\Roaming\Typora\typora-user-images\image-20241103172341764.png)
+![](https://pic.imgdb.cn/item/6726d70cd29ded1a8c253b9d.png)
 
 ![](https://pic.imgdb.cn/item/6726d4bed29ded1a8c238ee0.png)
 
-
-
 ![](https://pic.imgdb.cn/item/6726d4d7d29ded1a8c239f21.png)
 
-![image-20241103172523259](C:\Users\guinan.lin\AppData\Roaming\Typora\typora-user-images\image-20241103172523259.png)
+![](https://pic.imgdb.cn/item/6726d72ad29ded1a8c257767.png)
 
 ## 安装
 
