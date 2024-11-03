@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE 和编辑器配置
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 日志文件
+*.log
+
+# 其他
+*.DS_Store
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+*.coverage
+*.cover
+*.hypothesis/
+.pytest_cache/
+*.mypy_cache/
+*.pytest_cache/
+*.coverage.*
+*.pylint.d
+*.tox/
+*.coverage
+*.egg-info/
+*.dist-info/
+*.mypy_cache/
+*.pytest_cache/
+*.coverage.*
+*.pylint.d
+*.tox/
