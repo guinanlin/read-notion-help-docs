@@ -11,9 +11,9 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 db = {
     "tim": {
-        "username": "tim",
-        "full_name": "Tim Ruscica",
-        "email": "tim@gmail.com",
+        "username": "guinan",
+        "full_name": "Lin Guinan",
+        "email": "goodhawk@gmail.com",
         "hashed_password": "$2b$12$HxWHkvMuL7WrZad6lcCfluNFj1/Zp63lvP5aUrKlSTYtoFzPXHOtu",
         "disabled": False
     }
