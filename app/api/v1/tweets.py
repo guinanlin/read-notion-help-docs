@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from app.services.tweets_service import get_tweet_by_id, get_sol_token_by_id
+from app.services.tweets_service import get_tweet_by_id, get_sol_token_by_id, get_tweets
 from app.utils.tweets import content_to_Embedding, content_to_Embedding2
 
 router = APIRouter()
@@ -59,3 +59,11 @@ async def update_token_embedding(token_id: int):
         raise HTTPException(status_code=500, detail="Failed to update token embedding")
     
     return {"message": "Token embedding updated successfully."}
+
+@router.get("/tweets", tags=["tweets"])
+async def get_tweets_paginated(skip: int = 0, limit: int = 10):
+    tweets = get_tweets(skip=skip, limit=limit)
+    if not tweets:
+        raise HTTPException(status_code=404, detail="No tweets found")
+    
+    return tweets
