@@ -134,3 +134,17 @@ class SupabaseService:
         except Exception as e:
             print(f"插入数据时发生错误: {str(e)}")
             raise e  # 重新抛出异常以便上层调用可以处理
+
+    @staticmethod
+    def update_tweet_embedding(tweet_id: int, embedding: list):
+        response = supabase.table("tweets").update({
+            "embedding": embedding
+        }).eq("id", tweet_id).execute()
+        return response
+    
+    @staticmethod
+    def update_token_embedding(token_id: int, embedding: list):
+        response = supabase.table("sol_tokens").update({
+            "embedding": embedding
+        }).eq("id", token_id).execute()
+        return response
