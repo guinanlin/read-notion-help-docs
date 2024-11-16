@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from app.services.tweets_service import get_tweet_by_id, get_sol_token_by_id, get_tweets
-from app.utils.tweets import content_to_Embedding, content_to_Embedding2
+from app.utils.tweets import content_to_Embedding, content_to_Embedding2, from_content_to_Embedding, from_content_to_Embedding2
 
 router = APIRouter()
 
@@ -67,3 +67,14 @@ async def get_tweets_paginated(skip: int = 0, limit: int = 10):
         raise HTTPException(status_code=404, detail="No tweets found")
     
     return tweets
+
+@router.post("/tweets/from_content", tags=["tweets"])
+async def from_content_to_Embedding_endpoint(content: str):
+    result = await from_content_to_Embedding(content)
+    return result
+
+@router.post("/tokens/from_content", tags=["tweets"])
+async def from_content_to_Embedding2_endpoint(name: str, symbol: str):
+    result = await from_content_to_Embedding2(name, symbol)
+    return result
+
